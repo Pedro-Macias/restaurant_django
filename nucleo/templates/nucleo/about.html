@@ -1,0 +1,38 @@
+
+{% extends 'nucleo/plantilla.html' %}
+
+<!-- TITULO-->
+{% block titulo %}
+    Acerca de
+{% endblock %}
+
+<!-- CABECERA-->
+
+{% block imagen %}{%load static %}{% static 'nucleo/img/fondo.jpg'%}{% endblock%}
+
+{% block cabecera  %} 
+<h1 class= "text-white text-center">Acerca de</h1> 
+<h4 class="text-white text-center d-none d-sm-none d-md-block">Información , situación , etc</h4>
+{%endblock%}
+
+<!--CONTENIDO-->
+{% block contenido  %}
+    
+    <div class="container pt-3">
+        <div class="row">   
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid avatar" src="{% static 'nucleo/img/avatar.jpg'%}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading">Chef Pedro</h2>   
+                <p>En nuestro restaurante , disfrutaras de una experiencia de cine , </p>
+                <p>Fusionamos la cocina de los 5 continentes haciendo que tu esperiencia sea una 
+                inmersion en todas esas peliculas que tu memoria puede recordar</p>
+            </div>
+        </div>  
+    </div>
+
+
+
+
+{% endblock   %}%}

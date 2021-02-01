@@ -1,0 +1,41 @@
+{% extends 'nucleo/plantilla.html' %}
+
+<!-- TITULO-->
+{% block titulo %}
+    Contacto
+{% endblock %}
+<!-- CABECERA-->
+
+{% block imagen %}{%load static %}{% static 'nucleo/img/fondo.jpg'%}{% endblock%}
+
+{% block cabecera  %} 
+<h1 class="text-white text-center">Contacta</h1>
+<h4 class= "text-white text-center d-none d-sm-none d-md-block">Reservas y comentarios</h4> 
+{%endblock%}
+
+<!--CONTENIDO-->
+
+
+{% block contenido  %}
+
+        <div class="container mt-5">
+            <div class="col-lg-8 col.md mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Puedes contactar con nosotros</h1>
+                    </div>
+                    <div class="card-body">
+                        <h3>horario de Cocina de 12:00 a 24:00 horas</h3>
+                        <h5>Esperanmos tu reserva </h5>
+                        <p><b>Email:</b> <a href="mailto: contacto@filmFood.com">contacto@FilmFood.com</a>
+                        <br>
+                        <b>Facebook</b> <a href="https://www.facebook.com/FilmFood">(facebook) Film  Food</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    
+
+
+{% endblock   %}%}

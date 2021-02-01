@@ -1,0 +1,51 @@
+{% extends 'nucleo/plantilla.html' %}
+
+<!-- TITULO-->
+{% block titulo %}
+    Blog
+{% endblock %}
+
+<!-- CABECERA-->
+
+{% block imagen %}{%load static %}{% static 'nucleo/img/fondo.jpg'%}{% endblock%}
+
+{% block cabecera  %} 
+    <h1 class= "text-white text-center">Nuestro Blog</h1> 
+    <h4 class= "text-white text-center d-none d-sm-none d-md-block">Consejos y curiosidades</h4> 
+{%endblock%}
+
+<!--CONTENIDO-->
+{% block contenido  %}
+
+        <div class="container">
+            <!-- segunda entrada-->
+            <div class="row project mt-5">  	
+                <div class="col-lg-3 col-md-4 offset-lg-1">
+                    <img class="img-fluid" src="{% static 'nucleo/img/fajitas.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <h2 class="">Chicken fajitas</h2>   
+                <p>Las fajitas de pollo y verdura son una de las recetas con carne más comunes en muchos restaurantes de Tex-Mex 
+                y os aseguro que en casa disfrutarás más si cabe,
+                de uno de los platos más tradicionales de la cocina mexicana en poco más de veinte minutos.</p>
+                <p><a href="https://www.recetasderechupete.com/fajitas-mexicanas-de-pollo-con-verduras-chicken-fajitas/10046/">Más información</a></p>
+                </div>
+            </div>
+            <!-- primera entrada-->
+            <div class="row project mt-5">  	
+                <div class="col-lg-3 col-md-4 offset-lg-1">
+                    <img class="img-fluid" src="{% static 'nucleo/img/fusion.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <h2 class="">Cocina Fusion</h2>   
+                <p>La cocina fusión es un concepto general que se emplea en gastronomía para indicar
+                tanto la mezcla de estilos culinarios de diferentes culturas como la mezcla de ingredientes 
+                representativos de otros países, mezcla de condimentos , especias o prácticas culinarias
+                Ensayando platos de contraste entre occidente-oriente y buscando la sorpresa del comensal</p>
+                <p><a href="https://es.wikipedia.org/wiki/Cocina_fusi%C3%B3n">Más información</a></p>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock   %}%}

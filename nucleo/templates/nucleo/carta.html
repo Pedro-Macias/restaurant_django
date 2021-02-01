@@ -1,0 +1,339 @@
+
+{% extends 'nucleo/plantilla.html' %}
+
+<!-- TITULO-->
+{% block titulo %}
+    Carta
+{% endblock %}
+<!-- CABECERA-->
+
+{% block imagen %}{%load static %}{% static 'nucleo/img/fondo.jpg'%}{% endblock%}
+
+{% block cabecera  %} 
+<h1 class="text-white text-center">Carta</h1>
+<h4 class= "text-white text-center d-none d-sm-none d-md-block">Disfrtuta una experiencia de Pelicula</h4> 
+
+{%endblock%}
+<!--CONTENIDO-->
+
+{% block contenido  %}
+
+        <div class="container">
+            <div class="row">
+                <!--primera categoria-->
+                <div class="col-lg-6 col-md-10 mt-5">
+
+                    <div class="card">
+                            <div class="card-header">
+                            <h2 class="card-title">Entrantes</h2>
+                            </div>                        
+                            <div class="card-body">
+                                
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Plato</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Añadir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/fusion.jpg'%}" class ="img-fluid"width="100" height="50"> 
+                                        </td>
+                                        <td>Pulpo</td>
+                                        <td>15.45</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>cantidad</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/carpacho.jpg' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Carpacho de Bonito</td>
+                                        <td>10.25</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>racion</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary"width="100" height="50">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    </table>
+
+                            </div>
+                    </div>
+                </div>
+                <!--segunda categoria-->
+                                <div class="col-lg-6 col-md-10 mt-5">
+
+                    <div class="card">
+                            <div class="card-header">
+                            <h2 class="card-title">Carnes</h2>
+                            </div>                        
+                            <div class="card-body">
+                                
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Plato</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Añadir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/fusion.jpg' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Pulpo</td>
+                                        <td>15.45</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>cantidad</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/carpacho.jpg '%}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Carpacho de Bonito</td>
+                                        <td>10.25</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>racion</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    </table>
+
+                            </div>
+                    </div>
+                </div>
+
+                <!--tercera categoria-->
+                <div class="col-lg-6 col-md-10 mt-5">
+
+                    <div class="card">
+                            <div class="card-header">
+                            <h2 class="card-title">Pescados</h2>
+                            </div>                        
+                            <div class="card-body">
+                                
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                        <th  scope="col">Imagen</th>
+                                        <th scope="col">Plato</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Añadir</th>
+                                        </tr>
+                                    </div>    
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/fusion.jpg' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Pulpo</td>
+                                        <td>15.45</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>cantidad</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/carpacho.jpg ' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Carpacho de Bonito</td>
+                                        <td>10.25</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>racion</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    </table>
+
+                            </div>
+                    </div>
+                </div>
+
+                <!-- cuarta categoria-->
+                                <div class="col-lg-6 col-md-10 mt-5">
+
+                    <div class="card">
+                            <div class="card-header">
+                            <h2 class="card-title">Postres</h2>
+                            </div>                        
+                            <div class="card-body">
+                                
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Plato</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Añadir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/fusion.jpg' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Pulpo</td>
+                                        <td>15.45</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>cantidad</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <img src="{% static 'nucleo/img/carpacho.jpg' %}" class ="img-fluid" width="100" height="50"> 
+                                        </td>
+                                        <td>Carpacho de Bonito</td>
+                                        <td>10.25</td>
+                                        <td>
+                                            <form>
+                                                <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>racion</option>
+                                                        <option value="1">1 racion</option>
+                                                        <option value="2">2 raciones</option>
+                                                        <option value="3">3 raciones</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                    <button type="submit" class="btn btn-primary">Pedir</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                        </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    </table>
+
+                            </div>
+                    </div>
+                </div>
+                
+            </div>        
+
+
+
+
+
+        </div>
+
+{% endblock   %}%}

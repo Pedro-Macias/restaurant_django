@@ -1,0 +1,30 @@
+
+body {
+    background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+.navbar {
+    background-color: #212121 !important;
+    }   
+/* #mainNav{
+    position:absolute;
+} */
+
+
+.img-container{
+    width:100%;
+    height:auto;
+    position: relative;
+    }
+.caption { 
+    position: absolute; 
+    top: 60%; 
+    left: 15%; 
+    width: 100%; 
+    } 
+.avatar{
+    width:100%;
+    border-radius: 50%;
+    margin-top:20px;}

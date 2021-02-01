@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} {% endblock %} | The Film Food</title>
+
+    <!-- ESTILOS Y FUENTES DEL TEMPLATE-->
+
+    {% load static%}
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'nucleo/css/main.css' %}">
+</head>
+<body>
+
+        <!--CABECERA-->
+        <header>
+        <div class="img-container">
+                <img  class="img-fluid card-img" src="{% block imagen %} {% endblock%}">
+            <div class="caption"> 
+                {% block cabecera  %} {%endblock%}
+                
+            </div>
+        </div>
+        </header>
+        <!-- BARRA DE NAVEGACION-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav">">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home'%}"><h4 class="text-white">The Film Food</h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog'%}"><h5 class="text-white">Blog</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'carta'%}"><h5 class="text-white">Carta</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about'%}"><h5 class="text-white">Acerca de</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contacto'%}"><h5 class="text-white">Contacto</h5></a>
+                </li>
+                
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!--CONTENIDO-->
+        {% block contenido%}
+        {% endblock %}
+
+        <!-- BARRA SEPARADORA-->
+        {%if request.path != '/' %} <hr>{%endif %}
+        <!-- PIE DE PAGINA -->
+        <footer>
+        <div class="container mt-5">
+            <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+
+                <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram  fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                </ul>
+                <div>
+                    <p class="copyright text-center text-muted">Copyright &copy; 2021 · Pedro Macias (Proyecto Django) </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </footer>
+    
+
+    <!-- Bootstrap y Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
